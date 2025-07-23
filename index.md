@@ -1,3 +1,8 @@
+---
+layout: deafult
+title: Home
+---
+
 # Home
 
 #### Technical Skills: MATLAB, Python, C++, Analog/Digital Electronics, Embedded Systems
