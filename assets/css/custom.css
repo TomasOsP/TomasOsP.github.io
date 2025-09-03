@@ -1,0 +1,13 @@
+.sidebar .author__avatar img,
+.page__footer .author__avatar img,
+.page__content .author__avatar img {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+}
+/* Custom styles for author avatar in various sections */
+/* Resize avatar in author box on posts */
+.author__avatar img {
+  width: 180px !important;
+  height: 180px !important;
+}

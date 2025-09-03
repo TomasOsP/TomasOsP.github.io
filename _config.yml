@@ -25,11 +25,16 @@ github_username:  TomasOsP
 author: tomasospina
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: "contrast" # or "default", "dark", "neon", etc.
 main_nav: true # Show the main navigation menu
 sass:
   style: compressed
+  
+head_custom: assets/css/custom.css
+
+include:
+  -  assets/css/custom.css
 plugins:
   - jekyll-feed
   - jekyll-include-cache
