@@ -1,7 +1,8 @@
 ---
-layout: single
+layout: posts
 title: Projects
 permalink: /projects/
+author_profile: true
 ---
 
 ## Pedal Guitar Design

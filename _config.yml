@@ -30,7 +30,12 @@ minimal_mistakes_skin: "contrast" # or "default", "dark", "neon", etc.
 main_nav: true # Show the main navigation menu
 sass:
   style: compressed
-  
+
+recent_posts:
+  show_excerpts: true
+  show_read_more: false
+  image: true
+
 head_custom: assets/css/custom.css
 
 include:
