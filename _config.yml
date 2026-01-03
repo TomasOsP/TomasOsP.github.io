@@ -33,7 +33,7 @@ sass:
 
 recent_posts:
   show_excerpts: true
-  show_read_more: false
+  show_read_more: true
   image: true
 
 head_custom: assets/css/custom.css

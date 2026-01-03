@@ -5,7 +5,7 @@ author_profile: true
 entries_layout: list
 ---
 
-I am a final year student of electrical engineering at Universidad de los Andes. 
+Just finished my final year of bachelor's in electrical engineering at Universidad de los Andes. 
 My current thesis is focused on a real time electromagnetic field monitoring system.
 
 My experience includes developing a Salmonella biosensor presented at ASM Microbe 2025, designing an ESP32-based web interface, and creating a fuzzy logic control system for a PCB oven. During my internship at Kiwibot, I worked on autonomous robots and presented ROS concepts at the University of Maine in the US.
