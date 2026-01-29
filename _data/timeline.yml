@@ -1,17 +1,25 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Operation Analyst, Kiwibot, US
+  from: Jul. 2024
+  to: Dec. 2024
+  description: As an Operations Analyst Intern at Kiwibot’s high-volume San Francisco hub, 
+               I accelerated nationwide deployment by assembling over 50% of the new 
+               autonomous fleet in under two months. By leading proactive maintenance 
+               and strategic fleet management, I helped elevate the site to one of the 
+               top three highest-demand locations in the U.S.. I utilized data-driven 
+               analysis to identify process bottlenecks, implementing workflow improvements 
+               that increased throughput and reduced manual intervention. This role provided 
+               hands-on experience in scaling real-world robotic systems and enhancing 
+               operational reliability through technical cross-functional collaboration.
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Electronic Engineer, Universidad de los Andes, Colombia
+  from: 2021
+  to: 2025
+  description: As a BS candidate in Electrical Engineering at Universidad de los Andes with 
+               a 4.2/5.0 GPA , I have specialized in bridging hardware design with intelligent 
+               software through rigorous coursework in Digital System Architecture, 
+               Feedback Control, and Optimization. My academic journey is defined by high-impact 
+               prototyping, including a Salmonella Biosensor with an end-to-end MQTT data pipeline 
+               and GymEdge, an RTOS-based motion monitoring system. These projects, alongside my 
+               work on Fuzzy Logic control systems , demonstrate my ability to translate complex 
+               theoretical concepts—from computer architecture to object-oriented programming—into 
+               functional, reliable, and product-oriented engineering solutions.
