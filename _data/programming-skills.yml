@@ -1,11 +1,14 @@
-- name: Python #(automation, data processing, and AI workflows)
+- name: Python
+  description: Automation, data processing, and AI workflows
   percentage: 90
   color: 
 
-- name: C/C++ #(firmware development, real-time systems, and embedded contexts)
+- name: C/C++
+  description: Firmware development, real-time systems, and embedded contexts
   percentage: 80
   color: secondary
 
-- name: Linux & Bash #(system automation, server environments, and script-based tooling)
+- name: Linux & Bash
+  description: System automation, server environments, and script-based tooling
   percentage: 65
   color: danger

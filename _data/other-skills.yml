@@ -1,7 +1,9 @@
-- name: Hardware Design (PCB) #(design physical circuits and multilayer layouts)
+- name: Hardware Design (PCB)
+  description: Design physical circuits and multilayer layouts
   percentage: 95
   color: info
-- name: System Orchestration #(integrate APIs, webhooks, and AI-assisted logic into cohesive workflows)
+- name: System Orchestration
+  description: Integrate APIs, webhooks, and AI-assisted logic into cohesive workflows
   percentage: 70
   color: success
 
