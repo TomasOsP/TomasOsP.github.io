@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ai Lead Automation">
+  <meta property="og:description" content="My goal is to creativity through technology and design.">
+  <meta property="og:image" content="assets/images/foto_perfil.PNG">
+
+  <title>Ai Lead Automation</title>
+  <meta name="description" content="My goal is to creativity through technology and design.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Tomas Ospina</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="building-an-ai-powered-lead-automation-system">Building an AI-Powered Lead Automation System</h1>
+
+<p>As a technical engineer, I’m always looking for ways to leverage automation and AI to solve real-world problems and streamline workflows. This project, <strong>AI Lead Automation</strong>, is a testament to that approach, demonstrating a robust system for intelligent lead validation and classification.</p>
+
+<hr />
+
+<h2 id="description">Description</h2>
+
+<p>The AI Lead Automation system is an intelligent workflow designed to automatically process, validate, and classify incoming leads. It integrates both deterministic business rules and advanced AI (Large Language Model) capabilities to ensure high-quality, relevant leads are identified and acted upon, while irrelevant or incomplete leads are filtered out. The system provides full traceability for every decision, ensuring transparency and accountability.</p>
+
+<p>This project showcases my ability to design and implement modular, scalable, and data-driven solutions that combine traditional software engineering principles with emerging AI technologies.</p>
+
+<hr />
+
+<h2 id="problem-solved">Problem Solved</h2>
+
+<p>In many business contexts, particularly in industries like legal services, the initial screening of leads is a critical yet often time-consuming and inconsistent manual process. Legal firms, for instance, receive numerous inquiries daily, many of which may lack essential information, fall outside their service scope, or simply be low-quality. Manually reviewing each lead consumes valuable staff time, introduces human error, and can lead to missed opportunities or wasted effort on unqualified prospects.</p>
+
+<p>The AI Lead Automation system addresses this by:</p>
+<ul>
+  <li><strong>Automating Validation:</strong> Eliminating the need for manual checks on basic data points.</li>
+  <li><strong>Enhancing Quality Assessment:</strong> Using AI to understand the context and relevance of a lead’s description, going beyond simple keyword matching.</li>
+  <li><strong>Standardizing Decisions:</strong> Ensuring consistent classification (APPROVED, REJECTED, NEEDS_REVIEW) based on predefined criteria and AI insights.</li>
+  <li><strong>Improving Efficiency:</strong> Drastically reducing the time and resources spent on lead qualification, allowing teams to focus on high-value activities.</li>
+  <li><strong>Providing Traceability:</strong> Logging every decision with a clear reason, enabling auditing and continuous improvement.</li>
+</ul>
+
+<hr />
+
+<h2 id="architecture--design">Architecture / Design</h2>
+
+<p>The system is engineered with a modular architecture, promoting maintainability, scalability, and clear separation of concerns. It comprises five core Python modules orchestrated by a central <code class="language-plaintext highlighter-rouge">main.py</code> script.</p>
+
+<p><strong>Core Modules and Workflow:</strong></p>
+
+<ol>
+  <li><strong><code class="language-plaintext highlighter-rouge">main.py</code> (Orchestrator):</strong> This is the entry point of the system. It’s responsible for loading raw lead data (e.g., from <code class="language-plaintext highlighter-rouge">sample_leads.json</code>), coordinating the entire validation and decision-making flow, and finally presenting and persisting the results.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">rules.py</code> (Deterministic Validation):</strong> This module applies a set of predefined, deterministic business rules. It checks for basic data integrity and completeness, such as validating email formats, ensuring required fields like <code class="language-plaintext highlighter-rouge">name</code> and <code class="language-plaintext highlighter-rouge">description</code> are present, and applying initial filters.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">llm_validator.py</code> (AI-powered Quality Assurance):</strong> Simulating an interaction with a Large Language Model, this module assesses the qualitative aspects of a lead. It analyzes the <code class="language-plaintext highlighter-rouge">description</code> field to evaluate the lead’s relevance, clarity, and overall quality, providing an AI-driven perspective on its potential.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">decision_engine.py</code> (Final Decision Logic):</strong> This module acts as the brain of the system. It aggregates the outcomes from both the <code class="language-plaintext highlighter-rouge">rules.py</code> (deterministic checks) and <code class="language-plaintext highlighter-rouge">llm_validator.py</code> (AI assessment). Based on a defined logic, it makes the final classification decision for each lead: <code class="language-plaintext highlighter-rouge">APPROVED</code>, <code class="language-plaintext highlighter-rouge">REJECTED</code>, or <code class="language-plaintext highlighter-rouge">NEEDS_REVIEW</code> (for cases requiring human oversight).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">database.py</code> (Persistence Layer):</strong> This module handles the storage of processed lead results. It uses SQLite to persist each lead’s unique ID, the final decision, a timestamp, and the reason for the decision, ensuring full traceability and a historical record. Results are also backed up to <code class="language-plaintext highlighter-rouge">lead_results.json</code>.</li>
+</ol>
+
+<p>This design allows for easy expansion of validation rules, integration of different AI models, and adaptation to various lead sources or downstream actions.</p>
+
+<hr />
+
+<h2 id="technologies">Technologies</h2>
+
+<ul>
+  <li><strong>Main Language:</strong> Python 3.7+
+    <ul>
+      <li>Chosen for its readability, extensive libraries, and strong ecosystem for AI and automation.</li>
+    </ul>
+  </li>
+  <li><strong>Database:</strong> SQLite 3
+    <ul>
+      <li>Utilized for lightweight, serverless data persistence, ideal for embedding within the application without external dependencies.</li>
+    </ul>
+  </li>
+  <li><strong>AI Integration:</strong> Conceptual LLM (simulated)
+    <ul>
+      <li>Demonstrates the architectural readiness to integrate with external LLM APIs (e.g., OpenAI, Hugging Face) for advanced natural language understanding and lead quality assessment. The current implementation simulates this behavior to focus on the workflow and decision logic.</li>
+    </ul>
+  </li>
+  <li><strong>Data Formats:</strong> JSON
+    <ul>
+      <li>Used for input (<code class="language-plaintext highlighter-rouge">sample_leads.json</code>) and output (<code class="language-plaintext highlighter-rouge">lead_results.json</code>) data, providing a flexible and human-readable structure.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The project emphasizes a lean and efficient tech stack, leveraging Python’s standard library features where possible to minimize external dependencies and simplify deployment.</p>
+
+<hr />
+
+<h2 id="results">Results</h2>
+
+<p>The AI Lead Automation system successfully demonstrates an end-to-end workflow for intelligent lead processing. Key outcomes include:</p>
+
+<ul>
+  <li><strong>Automated Decision-Making:</strong> Leads are automatically categorized, significantly reducing manual review effort.</li>
+  <li><strong>Consistent Application of Criteria:</strong> Decisions are based on a combination of explicit rules and AI insights, ensuring fairness and consistency across all leads.</li>
+</ul>
+
+<hr />
+
+<p>🔗 <strong>Repositorio:</strong> <a href="https://github.com/TomasOsP/ai-lead-automation">Ver en GitHub</a></p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Tomas Ospina Martinez</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:t.ospinam@outlook.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/TomasOsP"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.instagram.com/tomaskisler"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#405de6'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-instagram fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/2t0mas-0spina3"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/yousinix/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
