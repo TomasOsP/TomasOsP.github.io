@@ -1,8 +1,8 @@
 ---
-name: "Ai Lead Automation"
+name: "AI Lead Automation"
 tools: [python]
-image:
-description:
+image: /assets/images/hover_ai_lead.png
+description: Workflow of a simulated enviorionment designed to process, validate and classify incoming leads using deterministic business rules and LLM. 
 ---
 
 # Building an AI-Powered Lead Automation System
@@ -46,6 +46,16 @@ The system is engineered with a modular architecture, promoting maintainability,
 
 This design allows for easy expansion of validation rules, integration of different AI models, and adaptation to various lead sources or downstream actions.
 
+<p align="center">
+  <a href="https://mermaid.live/edit#pako:eNplk9uO2jAQhl_F8lUrAZuQcEhUrQQktFvRwrIrKjVByJsM4DaxIx-6pcC71zhAWTVX9sz8nz3_xHuc8RxwiNcFf822RCj0HKUMmW-QzMkrmgDJUUQU-fAi7u4lKasCVoUJytYPydkSNZv3aJiUhLJWtbNFU5FtQSpBFBfLlNW0oS0cJUIXIC-VESgQJWVUKpqhBSloThQ11FozOmkO_8JoDlIX6oCGb6lRUhTl6lddx8WFPnhAj9oE1Q4NpAQpS2DqjI4s2lTERqYt_T9snOSQUWlSK2AbyuACHlNGChSdk2jCNzS7NhrX5NlsPl3E0QGNE3Mp8kLkVf70OKEK0AyENI0Dy2B5K53Hn-PRs5Xehr_GcfS0mseLh_ibTdXJsb3qx-TdmRoN3y9vM5-SIcl-6sqefJrbSlgTz-N72_FDUjss0VSrSisrGnEmeQHozthfcXFyEDfwRtAch2tSSGjg0kyRnPZ4f8KlWG2hhBSHZpnDmhhkilN2NLqKsO-clzhUQhul4HqzvWx0ZayCiJKNIOUVLoDlIEZcM4VDN3AtA4d7_BuHnt_qBY4b9Nu-3w-6Tr-Bdzhsul7LdZ3A7wZu2w883_OPDfzHHuu0-p1Oz3OcTrfXbXeDjtfAkFPz23ypH4J9D8e__kv6hw">
+    <img
+      src="https://mermaid.ink/img/pako:eNplk9uO2jAQhl_F8lUrAZuQcEhUrQQktFvRwrIrKjVByJsM4DaxIx-6pcC71zhAWTVX9sz8nz3_xHuc8RxwiNcFf822RCj0HKUMmW-QzMkrmgDJUUQU-fAi7u4lKasCVoUJytYPydkSNZv3aJiUhLJWtbNFU5FtQSpBFBfLlNW0oS0cJUIXIC-VESgQJWVUKpqhBSloThQ11FozOmkO_8JoDlIX6oCGb6lRUhTl6lddx8WFPnhAj9oE1Q4NpAQpS2DqjI4s2lTERqYt_T9snOSQUWlSK2AbyuACHlNGChSdk2jCNzS7NhrX5NlsPl3E0QGNE3Mp8kLkVf70OKEK0AyENI0Dy2B5K53Hn-PRs5Xehr_GcfS0mseLh_ibTdXJsb3qx-TdmRoN3y9vM5-SIcl-6sqefJrbSlgTz-N72_FDUjss0VSrSisrGnEmeQHozthfcXFyEDfwRtAch2tSSGjg0kyRnPZ4f8KlWG2hhBSHZpnDmhhkilN2NLqKsO-clzhUQhul4HqzvWx0ZayCiJKNIOUVLoDlIEZcM4VDN3AtA4d7_BuHnt_qBY4b9Nu-3w-6Tr-Bdzhsul7LdZ3A7wZu2w883_OPDfzHHuu0-p1Oz3OcTrfXbXeDjtfAkFPz23ypH4J9D8e__kv6hw?type=png)"
+      alt="Flow chart"
+      width="600"
+    />
+  </a>
+</p>
+
 ---
 
 ## Technologies
@@ -61,9 +71,16 @@ This design allows for easy expansion of validation rules, integration of differ
 
 The project emphasizes a lean and efficient tech stack, leveraging Python's standard library features where possible to minimize external dependencies and simplify deployment.
 
+
 ---
 
 ## Results
+
+<img
+  src="{{ '/assets/gifs/ai-lead-demo.gif' | relative_url }}"
+  alt="AI Lead Automation Terminal Demo"
+  style="max-width: 60%; border-radius: 8px;"
+/>
 
 The AI Lead Automation system successfully demonstrates an end-to-end workflow for intelligent lead processing. Key outcomes include:
 
