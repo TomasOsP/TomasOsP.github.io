@@ -159,6 +159,12 @@ body { font-family: "Poppins", sans-serif; }
 .project.card .card-img-top { border-radius: 15px 15px 0 0; }
 .project.card:hover:not(.post) { transform: translateY(-8px); box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24); }
 
+.project-gallery { display: flex; gap: 12px; width: 100%; max-width: 1200px; margin: 1.2rem auto; padding: 0 12px; align-items: center; justify-content: center; flex-wrap: nowrap; }
+
+.project-gallery__img { /* Make images shrink to 25% of the row so none get cropped and preserve aspect ratio (no cropping) */ flex: 0 1 25%; max-width: 25%; width: 25%; height: auto; object-fit: contain; background: #fafafa; padding: 4px; box-sizing: border-box; border-radius: 8px; display: block; }
+
+@media (max-width: 768px) { .project-gallery { flex-wrap: wrap; }
+  .project-gallery__img { flex: 1 1 50%; max-width: 50%; width: 50%; } }
 .timeline-body { position: relative; border-radius: 0 15px 15px 0; padding: 5px 0; }
 .timeline-body:after { content: ""; width: 4px; height: 100%; background-color: #007bff; position: absolute; left: -4px; top: 0; }
 .timeline-body .timeline-item { position: relative; }
