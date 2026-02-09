@@ -44,6 +44,9 @@ The system's architecture is built around efficient data handling and intelligen
 *   Python
 *   FreeRTOS
 *   Machine Learning
+*   Bluetooth Low Energy
+*   Webhook
+*   Flask
 
 ## Conclusion
 
