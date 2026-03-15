@@ -2,10 +2,11 @@
 // Inspired by https://stackoverflow.com/a/6615994/10194811
 
 #container {
-  display: inline-block;
+  display: block;
   position: relative;
-  width: 100%;
+  width: 200px;
   max-width: 200px;
+  margin: 0 auto;
 }
 
 #dummy {
@@ -46,6 +47,19 @@
   padding: 2rem 0 3rem;
   position: relative;
   z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-name {
@@ -124,6 +138,12 @@
   padding: 3rem 0;
   position: relative;
   z-index: 1;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .about-text {
@@ -215,6 +235,10 @@
   padding: 3rem 0;
   position: relative;
   z-index: 1;
+  
+  .text-center {
+    text-align: center;
+  }
 }
 
 .portfolio-grid {
@@ -383,6 +407,10 @@
   padding: 3rem 0;
   position: relative;
   z-index: 1;
+  
+  .text-center {
+    text-align: center;
+  }
 }
 
 .experience-timeline {
