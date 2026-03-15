@@ -121,7 +121,7 @@ body { font-family: "Poppins", sans-serif; }
 @media only screen and (min-width: 768px) { #attribution { writing-mode: vertical-rl; transform: rotate(180deg); position: fixed; bottom: 120px; right: 22px; } }
 .github-footer { font-size: 10px; color: #6c757d; text-decoration: underline; text-decoration-color: yellow; text-align: right; margin-top: 4em; margin-right: 2em; }
 
-#container { display: block; position: relative; width: 200px; max-width: 200px; margin: 0 auto; }
+#container { display: block; position: relative; max-width: 200px; margin: 0 auto; }
 
 #dummy { padding-top: 100%; /* 1:1 aspect ratio */ }
 
@@ -175,7 +175,6 @@ body { font-family: "Poppins", sans-serif; }
 .skill-progress { height: 100%; background: linear-gradient(90deg, #007bff, #3395ff); border-radius: 3px; transition: width 1s ease; }
 
 .portfolio-section { padding: 3rem 0; position: relative; z-index: 1; }
-.portfolio-section .text-center { text-align: center; }
 
 .portfolio-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
 
@@ -215,7 +214,6 @@ body { font-family: "Poppins", sans-serif; }
 .btn-projects:hover i { transform: translateX(5px); }
 
 .experience-highlights { padding: 3rem 0; position: relative; z-index: 1; }
-.experience-highlights .text-center { text-align: center; }
 
 .experience-timeline { max-width: 800px; margin: 0 auto; position: relative; padding-left: 30px; }
 .experience-timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, #007bff, #99caff); }

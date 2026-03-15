@@ -7,6 +7,7 @@ body {
 }
 
 // Utility classes (fallback if Bootstrap doesn't load)
+// Using !important to match Bootstrap's utility class specificity
 .text-center {
   text-align: center !important;
 }

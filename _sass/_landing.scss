@@ -4,7 +4,6 @@
 #container {
   display: block;
   position: relative;
-  width: 200px;
   max-width: 200px;
   margin: 0 auto;
 }
@@ -235,10 +234,6 @@
   padding: 3rem 0;
   position: relative;
   z-index: 1;
-  
-  .text-center {
-    text-align: center;
-  }
 }
 
 .portfolio-grid {
@@ -407,10 +402,6 @@
   padding: 3rem 0;
   position: relative;
   z-index: 1;
-  
-  .text-center {
-    text-align: center;
-  }
 }
 
 .experience-timeline {
