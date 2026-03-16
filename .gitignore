@@ -1,0 +1,14 @@
+# Jekyll build output
+_site/
+
+# Ruby/Bundle vendor directory
+vendor/
+.bundle/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.log
+*.swp
+*~

@@ -73,9 +73,12 @@
   </div>
 
 </nav>
-    <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+    <!-- Animated Particle Background -->
+<canvas id="particle-canvas"></canvas>
 
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content text-center">
     <!-- Fine Circle Responsive Image -->
     <div id="container" class="my-2">
       <div id="dummy"></div>
@@ -84,10 +87,213 @@
       </div>
     </div>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">My goal is to creativity through technology and design.</p>
-
+    <h1 class="hero-name wow animated fadeInUp" data-wow-delay=".15s">Tomas Ospina Martinez</h1>
+    <p class="hero-tagline wow animated fadeInUp" data-wow-delay=".2s">My goal is to creativity through technology and design.</p>
+    
+    <!-- Social Links -->
+    <div class="hero-social wow animated fadeInUp" data-wow-delay=".25s">
+      
+      <a href="https://github.com/TomasOsP" target="_blank" class="social-icon" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      
+      
+      <a href="https://linkedin.com/in/2t0mas-0spina3" target="_blank" class="social-icon" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      
+      
+      <a href="mailto:t.ospinam@outlook.com" class="social-icon" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      
+      
+      <a href="https://instagram.com/tomaskisler" target="_blank" class="social-icon" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      
+    </div>
   </div>
 </div>
+
+<!-- About Me Summary -->
+<section class="about-summary">
+  <h2 class="section-title wow animated fadeInUp">About Me</h2>
+  <div class="about-content">
+    <p class="about-text wow animated fadeInUp" data-wow-delay=".1s">
+      Bilingual Electrical Engineer driven by the intersection of <strong>embedded systems</strong>, <strong>hardware design</strong>, and <strong>intelligent automation</strong>. From architecting high-speed digital systems and multilayer PCBs to designing AI-assisted decision logic and scalable Python workflows. I bring a unique "systems thinking" approach to solving hardware-software challenges in the age of AI.
+    </p>
+  </div>
+</section>
+
+<!-- Skills Highlights -->
+<section class="skills-highlights">
+  <h2 class="section-title wow animated fadeInUp">Technical Skills</h2>
+  <div class="skills-grid">
+    
+    <div class="skill-card wow animated fadeInUp" data-wow-delay="0.1s">
+      <div class="skill-icon">
+        
+        <i class="fab fa-python"></i>
+      
+      </div>
+      <h4 class="skill-name">Python</h4>
+      <p class="skill-desc">Automation, data processing, and AI workflows</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 90%;"></div>
+      </div>
+    </div>
+    
+    <div class="skill-card wow animated fadeInUp" data-wow-delay="0.2s">
+      <div class="skill-icon">
+        
+      <i class="fas fa-code"></i>
+      
+      </div>
+      <h4 class="skill-name">C/C++</h4>
+      <p class="skill-desc">Firmware development, real-time systems, and embedded contexts</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 80%;"></div>
+      </div>
+    </div>
+    
+    <div class="skill-card wow animated fadeInUp" data-wow-delay="0.3s">
+      <div class="skill-icon">
+        
+      <i class="fab fa-linux"></i>
+      
+      </div>
+      <h4 class="skill-name">Linux &amp; Bash</h4>
+      <p class="skill-desc">System automation, server environments, and script-based tooling</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 65%;"></div>
+      </div>
+    </div>
+    
+    
+    <div class="skill-card wow animated fadeInUp" data-wow-delay="0.4s">
+      <div class="skill-icon">
+        
+        <i class="fas fa-microchip"></i>
+        
+      </div>
+      <h4 class="skill-name">Hardware Design (PCB)</h4>
+      <p class="skill-desc">Design physical circuits and multilayer layouts</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 95%;"></div>
+      </div>
+    </div>
+    
+    <div class="skill-card wow animated fadeInUp" data-wow-delay="0.5s">
+      <div class="skill-icon">
+        
+        <i class="fas fa-project-diagram"></i>
+        
+      </div>
+      <h4 class="skill-name">System Orchestration</h4>
+      <p class="skill-desc">Integrate APIs, webhooks, and AI-assisted logic into cohesive workflows</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 70%;"></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Featured Projects Portfolio -->
+<section class="portfolio-section">
+  <h2 class="section-title wow animated fadeInUp">Featured Projects</h2>
+  <p class="section-subtitle wow animated fadeInUp" data-wow-delay=".1s">Technology &amp; AI Focus</p>
+  
+  <div class="portfolio-grid">
+    
+    <div class="portfolio-card wow animated fadeInUp" data-wow-delay="0.15s">
+      <a href="/projects/1-2026-02-01-ai-lead-automation" class="portfolio-link">
+        <div class="portfolio-image">
+          
+          <img src="/assets/images/hover_ai_lead.png" alt="AI Lead Automation" />
+          
+          <div class="portfolio-overlay">
+            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3 class="portfolio-title">AI Lead Automation</h3>
+          <p class="portfolio-description">Workflow of a simulated enviorionment designed to process, validate and classify incoming leads u...</p>
+          <div class="portfolio-tags">
+            
+            <span class="tech-tag">python</span>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="portfolio-card wow animated fadeInUp" data-wow-delay="0.3s">
+      <a href="/projects/2-2026-02-01-rtos-gymedge" class="portfolio-link">
+        <div class="portfolio-image">
+          
+          <img src="/assets/images/fitness_IoT.jpg" alt="Rtos Gymedge" />
+          
+          <div class="portfolio-overlay">
+            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3 class="portfolio-title">Rtos Gymedge</h3>
+          <p class="portfolio-description">Clasificador de movimientos</p>
+          <div class="portfolio-tags">
+            
+            <span class="tech-tag">python</span>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="text-center mt-4 wow animated fadeInUp" data-wow-delay=".3s">
+    <a href="/projects/" class="btn-projects">
+      View All Projects <i class="fas fa-arrow-right ml-2"></i>
+    </a>
+  </div>
+</section>
+
+<!-- Experience Highlights -->
+<section class="experience-highlights">
+  <h2 class="section-title wow animated fadeInUp">Experience</h2>
+  <div class="experience-timeline">
+    
+    <div class="experience-item wow animated fadeInUp" data-wow-delay="0.15s">
+      <div class="experience-marker"></div>
+      <div class="experience-content">
+        <span class="experience-date">Jul. 2024 - Dec. 2024</span>
+        <h4 class="experience-title">Operation Analyst, Kiwibot, US</h4>
+        <p class="experience-desc">As an Operations Analyst Intern at Kiwibot’s high-volume San Francisco hub, I accelerated nationwide deployment by assembling over 50% of the new autonomous fleet in under two months. By leading pr...</p>
+      </div>
+    </div>
+    
+    <div class="experience-item wow animated fadeInUp" data-wow-delay="0.3s">
+      <div class="experience-marker"></div>
+      <div class="experience-content">
+        <span class="experience-date">2021 - 2025</span>
+        <h4 class="experience-title">Electronic Engineer, Universidad de los Andes, Colombia</h4>
+        <p class="experience-desc">As a BS candidate in Electrical Engineering at Universidad de los Andes with a 4.2/5.0 GPA , I have specialized in bridging hardware design with intelligent software through rigorous coursework in ...</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="text-center mt-4 wow animated fadeInUp" data-wow-delay=".3s">
+    <a href="/about/" class="btn-projects">
+      Full Resume <i class="fas fa-arrow-right ml-2"></i>
+    </a>
+  </div>
+</section>
+
+<!-- Particles Script -->
+<script src="/assets/js/particles.js"></script>
+
 
   </main>
   <footer class="mt-auto py-3 text-center">

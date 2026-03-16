@@ -100,5 +100,5 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
-theme_root: _remote_theme
+  - vendor
 theme_root: _remote_theme
