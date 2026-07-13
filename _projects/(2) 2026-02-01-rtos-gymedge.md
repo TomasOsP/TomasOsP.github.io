@@ -1,5 +1,5 @@
 ---
-name: "Rtos Gymedge"
+name: "RTOS Gymedge"
 tools: [python]
 image: /assets/images/fitness_IoT.jpg
 description: "Clasificador de movimientos"

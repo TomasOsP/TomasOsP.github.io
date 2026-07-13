@@ -1,0 +1,12 @@
+# Jekyll generated output (GitHub Pages rebuilds this from source)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+vendor/
+.bundle/
+
+# OS files
+.DS_Store
