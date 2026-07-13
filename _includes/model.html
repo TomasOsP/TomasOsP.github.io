@@ -1,0 +1,30 @@
+{% comment %}
+  Interactive 3D model embed (Google <model-viewer>).
+
+  REQUIRES `model_viewer: true` in the page's front matter (loads the library).
+
+  Usage in a project .md:
+    {% include model.html src="/assets/models/board.glb" alt="PCB 3D model" %}
+
+  Optional parameters:
+    poster  - image shown while the model loads   (e.g. "/assets/images/board.png")
+    height  - viewer height, default "420px"
+    rotate  - "false" to disable auto-rotate
+    caption - small text shown under the viewer
+{% endcomment %}
+<figure class="model-3d-wrap reveal">
+  <model-viewer
+    class="model-3d"
+    src="{{ include.src | relative_url }}"
+    alt="{{ include.alt | default: '3D model' }}"
+    {% if include.poster %}poster="{{ include.poster | relative_url }}"{% endif %}
+    camera-controls
+    touch-action="pan-y"
+    {% unless include.rotate == "false" %}auto-rotate auto-rotate-delay="0" rotation-per-second="25deg"{% endunless %}
+    interaction-prompt="auto"
+    shadow-intensity="1"
+    exposure="1.05"
+    style="height: {{ include.height | default: '420px' }};">
+  </model-viewer>
+  {% if include.caption %}<figcaption class="model-3d__caption">{{ include.caption }}</figcaption>{% endif %}
+</figure>
