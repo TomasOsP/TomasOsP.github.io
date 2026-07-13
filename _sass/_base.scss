@@ -6,6 +6,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+// Utility classes (fallback if Bootstrap doesn't load)
+// Using !important to match Bootstrap's utility class specificity
+.text-center {
+  text-align: center !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
 .badge {
   font-weight: 500;
 }

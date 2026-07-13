@@ -81,4 +81,29 @@ $dark-900: #17191a;
   .timeline-body .timeline-item:after{
     background-color: $dark-900;
   }
+
+  // Landing page cards (Portfolio, Skills, Experience)
+  --card-bg: #{$dark-600};
+  
+  .skill-card,
+  .portfolio-card,
+  .experience-content {
+    background-color: $dark-600;
+    border-color: rgba($primary, 0.2);
+  }
+  
+  .portfolio-title,
+  .skill-name,
+  .experience-title {
+    color: $text-white;
+  }
+  
+  .experience-marker {
+    border-color: $dark-900;
+  }
+  
+  .circle-image {
+    border-color: lighten($primary, 10%);
+    box-shadow: 0 0 30px rgba(lighten($primary, 10%), 0.4);
+  }
 }

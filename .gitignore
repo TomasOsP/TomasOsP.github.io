@@ -10,3 +10,8 @@ vendor/
 
 # OS files
 .DS_Store
+
+# Temporary files
+*.log
+*.swp
+*~
