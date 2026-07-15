@@ -89,4 +89,4 @@ The AI Lead Automation system successfully demonstrates an end-to-end workflow f
 
 ---
 
-🔗 **Repositorio:** [Ver en GitHub](https://github.com/TomasOsP/ai-lead-automation)
+🔗 [**View on GitHub**](https://github.com/TomasOsP/ai-lead-automation)

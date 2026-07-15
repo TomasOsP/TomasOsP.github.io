@@ -60,4 +60,4 @@ RTOS-GymEdge delivers a concise and intelligent solution for real-time exercise 
 
 ---
 
-🔗 **Repositorio:** [Ver en GitHub](https://github.com/TomasOsP/RTOS-GymEdge)
+🔗 [**View on GitHub**](https://github.com/TomasOsP/RTOS-GymEdge)
