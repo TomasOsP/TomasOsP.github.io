@@ -1,0 +1,25 @@
+{% comment %}
+  Embed a PDF (schematic, report, datasheet) with an inline preview and an
+  "open / download" button. The button always works even when the browser
+  can't render the inline preview (common on mobile).
+
+  Usage:
+    {% include pdf.html src="/assets/docs/audio-filter-schematic.pdf" title="Schematic (PDF)" %}
+
+  Optional parameters:
+    height  - preview height, default "620px"
+    title   - button label, default "Open PDF"
+{% endcomment %}
+<div class="pdf-embed reveal">
+  <object class="pdf-embed__object"
+          data="{{ include.src | relative_url }}"
+          type="application/pdf"
+          style="height: {{ include.height | default: '620px' }};">
+    <div class="pdf-embed__fallback">
+      <p>Your browser can't show the PDF inline.</p>
+    </div>
+  </object>
+  <a class="pdf-embed__btn" href="{{ include.src | relative_url }}" target="_blank" rel="noopener">
+    ⬇&nbsp; {{ include.title | default: 'Open PDF' }}
+  </a>
+</div>

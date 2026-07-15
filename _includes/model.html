@@ -7,10 +7,21 @@
     {% include model.html src="/assets/models/board.glb" alt="PCB 3D model" %}
 
   Optional parameters:
-    poster  - image shown while the model loads   (e.g. "/assets/images/board.png")
-    height  - viewer height, default "420px"
-    rotate  - "false" to disable auto-rotate
-    caption - small text shown under the viewer
+    poster          - image shown while the model loads
+    height          - viewer height, default "420px"
+    rotate          - "false" to disable auto-rotate
+    caption         - small text shown under the viewer
+
+    -- Look & lighting --
+    environment     - HDRI for image-based lighting/reflections (e.g. "/assets/hdri/studio.hdr")
+    skybox          - "true" to also show the HDRI as the background
+    exposure        - brightness of the lighting, default "1"
+    tone_mapping    - color response: "neutral" (accurate, default), "aces", "agx", "commerce"
+    shadow          - contact-shadow strength 0..1, default "1"
+
+    -- Animation (for exploded / disassembly views baked into the .glb) --
+    animation       - name of a glTF animation clip to play (e.g. "Explode")
+    autoplay        - "true" to play the animation automatically
 {% endcomment %}
 <figure class="model-3d-wrap reveal">
   <model-viewer
@@ -22,8 +33,14 @@
     touch-action="pan-y"
     {% unless include.rotate == "false" %}auto-rotate auto-rotate-delay="0" rotation-per-second="25deg"{% endunless %}
     interaction-prompt="auto"
-    shadow-intensity="1"
-    exposure="1.05"
+    {% if include.environment %}environment-image="{{ include.environment | relative_url }}"{% endif %}
+    {% if include.skybox == "true" and include.environment %}skybox-image="{{ include.environment | relative_url }}"{% endif %}
+    tone-mapping="{{ include.tone_mapping | default: 'neutral' }}"
+    exposure="{{ include.exposure | default: '1' }}"
+    shadow-intensity="{{ include.shadow | default: '1' }}"
+    shadow-softness="1"
+    {% if include.animation %}animation-name="{{ include.animation }}"{% endif %}
+    {% if include.autoplay == "true" %}autoplay{% endif %}
     style="height: {{ include.height | default: '420px' }};">
   </model-viewer>
   {% if include.caption %}<figcaption class="model-3d__caption">{{ include.caption }}</figcaption>{% endif %}

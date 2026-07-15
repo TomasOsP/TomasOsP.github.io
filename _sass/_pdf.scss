@@ -1,0 +1,42 @@
+// Embedded PDF (schematics, reports). Rendered by _includes/pdf.html.
+
+.pdf-embed {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.pdf-embed__object {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.pdf-embed__fallback {
+  padding: 2rem 1rem;
+  opacity: 0.75;
+}
+
+.pdf-embed__btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  transition: opacity 200ms ease, transform 200ms ease;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+}
+
+[data-theme="dark"] .pdf-embed__object {
+  border-color: rgba(255, 255, 255, 0.15);
+}
