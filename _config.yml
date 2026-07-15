@@ -101,4 +101,8 @@ exclude:
   - LICENSE
   - "*.log"
   - vendor
+  - CLAUDE.md
+  - assets/models/README.md
+  - assets/docs/README.md
+  - assets/hdri/README.md
 theme_root: _remote_theme

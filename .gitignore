@@ -15,3 +15,9 @@ vendor/
 *.log
 *.swp
 *~
+
+# Claude Code guidance (local only, not part of the published site)
+CLAUDE.md
+
+# Local pre-fix model backups (keep on disk, not in repo)
+*.orig.glb
