@@ -1,15 +1,20 @@
-# Professional career — rendered by _includes/about/timeline.html
-- title: Project Lead — Water Dispensing System
+# Professional career and projects — RIGHT column of the About timeline
+- year: "2026"
+  kind: Role
+  title: Project Lead — Water Dispensing System
   organization: Aguateros
   location: Bogotá, Colombia
   from: Jun. 2026
   to: Present
+  url: /projects/03-2026-12-07-water-dispenser
   highlights:
     - Designed, verified and debugged an optocoupler interface circuit that conditions the signal from a YF-S401 flow sensor.
     - Designed a custom PCB in KiCad, validating system behaviour before committing to the physical build.
-    - Diagnosed and recovered a system that had been out of service for six months, tracing the electrical faults and correcting them.
+    - Diagnosed and recovered a system that had been out of service for six months.
 
-- title: Technical Consultant / Technology Analyst
+- year: "2026"
+  kind: Role
+  title: Technical Consultant / Technology Analyst
   organization: Technology Consulting Unit — Financial Sector
   location: Bogotá, Colombia
   from: Jan. 2026
@@ -17,7 +22,33 @@
   highlights:
     - Executed technical validation rules, identifying errors and turning them into clear technical reports for multidisciplinary teams.
 
-- title: Operations Analysis Intern
+- year: "2025"
+  kind: Project
+  title: Embedded Device Configuration & QA Automation
+  from: Aug. 2025
+  to: Dec. 2025
+  url: /projects/01-2026-02-01-ai-lead-automation
+  highlights:
+    - Decision-action framework that catches configuration errors before deployment, with full traceability.
+
+- year: "2025"
+  kind: Project
+  title: Fuzzy-Logic Controller for a PCB Reflow Oven
+  from: 2025
+  url: /projects/07-2025-09-01-pcb-reflow-oven
+  highlights:
+    - Circuit behaviour validated in LTSpice before physical deployment, integrating the control algorithm with the PCB design.
+
+- year: "2025"
+  kind: Project
+  title: Salmonella Biosensor — Embedded Hardware
+  from: 2025
+  highlights:
+    - Designed the schematics and verified the sensing circuitry for a complete working prototype.
+
+- year: "2024"
+  kind: Role
+  title: Operations Analysis Intern
   organization: Kiwibot S.A.S.
   location: Orono, Maine, United States
   from: Jul. 2024

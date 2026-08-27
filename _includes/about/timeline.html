@@ -1,29 +1,21 @@
-<div class="col-lg mt-4">
+<div class="timeline-columns">
 
-  <h2 class="mb-3">{{ include.title }}</h2>
+  <section class="timeline-column timeline-column--left">
+    <h2 class="timeline-heading">{{ include.left_title }}</h2>
+    <div class="timeline-track">
+      {% for item in include.left_source %}
+        {% include about/timeline-entry.html item=item index=forloop.index %}
+      {% endfor %}
+    </div>
+  </section>
 
-  <div class="timeline-body bg-themed">
-    {% for item in include.source %}
-      <div class="timeline-item">
-        <div class="content">
-          <h2>{{ item.title }}</h2>
-          {%- if item.organization %}
-          <h5 class="org">
-            {{ item.organization }}{% if item.location %}<span class="location"> · {{ item.location }}</span>{% endif %}
-          </h5>
-          {%- endif %}
-          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-          {%- if item.description %}
-          <p>{{ item.description }}</p>
-          {%- endif %}
-          {%- if item.highlights %}
-          <ul class="highlights">
-            {% for highlight in item.highlights %}<li>{{ highlight }}</li>{% endfor %}
-          </ul>
-          {%- endif %}
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+  <section class="timeline-column timeline-column--right">
+    <h2 class="timeline-heading">{{ include.right_title }}</h2>
+    <div class="timeline-track">
+      {% for item in include.right_source %}
+        {% include about/timeline-entry.html item=item index=forloop.index %}
+      {% endfor %}
+    </div>
+  </section>
 
 </div>

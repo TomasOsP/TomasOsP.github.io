@@ -1,5 +1,23 @@
-# Academic career — rendered by _includes/about/timeline.html
-- title: BS, Electrical Engineering
+# Academic career — LEFT column of the About timeline
+- year: "2025"
+  title: Undergraduate Thesis — ELF Electromagnetic Field Meter
+  organization: Universidad de los Andes
+  location: Bogotá, Colombia
+  from: Nov. 2025
+  url: /projects/05-2025-11-01-elf-emf-measurement
+  highlights:
+    - Designed a low-cost instrument measuring electric and magnetic fields at extremely low frequency, validated against a LakeShore F71 teslameter inside triaxial Helmholtz coils.
+    - 'Advisors: Gustavo Ramos, Valentina Reyes.'
+
+- year: "2024"
+  title: IELTS Academic — Band 7.0
+  organization: British Council
+  from: 2024
+  highlights:
+    - Certified C1 English proficiency.
+
+- year: "2021"
+  title: BS, Electrical Engineering
   organization: Universidad de los Andes
   location: Bogotá, Colombia
   from: Jan. 2021
@@ -7,4 +25,3 @@
   highlights:
     - 'Cumulative GPA: 4.2 / 5.0'
     - 'Relevant coursework: Computer Architecture, Digital Systems Architecture, Feedback Control Systems, Automation.'
-    - Capstone and coursework projects in circuit validation and PCB design — a fuzzy-logic controller for a PCB reflow oven (validated in LTSpice before physical deployment) and a Salmonella biosensor whose sensing circuitry I designed and verified end to end.

@@ -1,0 +1,34 @@
+{%- assign shade = include.index | minus: 1 | modulo: 6 | plus: 1 -%}
+<div class="timeline-entry">
+
+  <span class="timeline-badge timeline-badge--{{ shade }}">{{ include.item.year }}</span>
+
+  <div class="timeline-card">
+    {%- if include.item.kind %}
+    <span class="kind">{{ include.item.kind }}</span>
+    {%- endif %}
+
+    <h3 class="title">
+      {%- if include.item.url -%}
+      <a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a>
+      {%- else -%}
+      {{ include.item.title }}
+      {%- endif -%}
+    </h3>
+
+    {%- if include.item.organization %}
+    <p class="org">
+      {{ include.item.organization }}{% if include.item.location %}<span class="location"> · {{ include.item.location }}</span>{% endif %}
+    </p>
+    {%- endif %}
+
+    <p class="date">{{ include.item.from }}{% if include.item.to %} — {{ include.item.to }}{% endif %}</p>
+
+    {%- if include.item.highlights %}
+    <ul class="highlights">
+      {% for highlight in include.item.highlights %}<li>{{ highlight }}</li>{% endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+
+</div>

@@ -26,13 +26,9 @@ explaining what I find to people who need to act on it.
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
-<div class="row">
-{% include about/timeline.html title="Professional Experience" source=site.data.experience %}
-</div>
-
-<div class="row">
-{% include about/timeline.html title="Education" source=site.data.education %}
-</div>
+{% include about/timeline.html
+     left_title="Academic"        left_source=site.data.education
+     right_title="Work & Projects" right_source=site.data.experience %}
 
 <div class="row">
 {% include about/languages.html title="Languages" source=site.data.languages %}
