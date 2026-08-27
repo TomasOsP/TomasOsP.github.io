@@ -43,7 +43,22 @@ rather than eyeballed.
 | Framework     | Spring Boot 4.1.1 — BOM imported, not inherited, so the plain-Java modules stay framework-free |
 | LLM SDK       | `anthropic-java` 2.57.0                                     |
 | Retrieval     | BM25 + hashing embeddings, hybrid ranking, chunker + tokenizer |
-| Tests         | JUnit 5, with a stub LLM client so the suite runs offline    |
+| Tests         | JUnit 5 — 59 tests, offline, no API key required             |
+| Evaluation    | 15 eval cases across 3 suites; CI gate exits non-zero below the bar |
+
+## Results
+
+Both paths were run, not just compiled:
+
+| Run | Result |
+| --- | --- |
+| `mvn test` — offline, stub provider | 59 tests, 0 failures |
+| Eval suites — offline baseline | 15/15 cases, `llm_judge` correctly reported as *skipped* |
+| Eval suites — live against `claude-opus-5` | 15/15 cases, `llm_judge` executed and passed |
+| Both services over HTTP, live provider | Real tool calls and cited answers — every JSON example in the repo is captured output, not illustration |
+
+The offline half is the interesting one: because the stub provider is deterministic, the
+whole suite runs in CI for free, on every push, with no key and no cost.
 
 ## Engineering notes
 The repo carries a `docs/PROMPT-WORKFLOW.md` documenting how it was built with an AI
@@ -60,4 +75,5 @@ in milliseconds, while the two services get the full Spring treatment.
 
 ---
 
-🔒 Private repository — happy to walk through the code on request.
+🔗 **Repository:** [View on GitHub](https://github.com/TomasOsP/ai-engineer-java)
+📄 **Prompt workflow:** [How it was built with an AI assistant](https://github.com/TomasOsP/ai-engineer-java/blob/main/docs/PROMPT-WORKFLOW.md)
