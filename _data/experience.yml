@@ -1,0 +1,27 @@
+# Professional career — rendered by _includes/about/timeline.html
+- title: Project Lead — Water Dispensing System
+  organization: Aguateros
+  location: Bogotá, Colombia
+  from: Jun. 2026
+  to: Present
+  highlights:
+    - Designed, verified and debugged an optocoupler interface circuit that conditions the signal from a YF-S401 flow sensor.
+    - Designed a custom PCB in KiCad, validating system behaviour before committing to the physical build.
+    - Diagnosed and recovered a system that had been out of service for six months, tracing the electrical faults and correcting them.
+
+- title: Technical Consultant / Technology Analyst
+  organization: Technology Consulting Unit — Financial Sector
+  location: Bogotá, Colombia
+  from: Jan. 2026
+  to: Present
+  highlights:
+    - Executed technical validation rules, identifying errors and turning them into clear technical reports for multidisciplinary teams.
+
+- title: Operations Analysis Intern
+  organization: Kiwibot S.A.S.
+  location: Orono, Maine, United States
+  from: Jul. 2024
+  to: Dec. 2024
+  highlights:
+    - Six months on site in the United States diagnosing hardware faults across a fleet of autonomous robots.
+    - Communicated directly with clients in English, explaining technical findings clearly.

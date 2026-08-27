@@ -16,6 +16,13 @@ Jekyll front matter already in place.
 
 <img
   class="reveal reveal--zoom"
+  src="{{ '/assets/images/repo-to-blog-flow.png' | relative_url }}"
+  alt="Source code to structured notes to the model to a Markdown post"
+  style="max-width: 55%; display:block; margin: 1.5rem auto;"
+/>
+
+<img
+  class="reveal"
   src="{{ '/assets/images/repo-to-blog-agent-architecture.png' | relative_url }}"
   alt="Pipeline: GitHub API → analyzer → LLM writer → Jinja2 template → Markdown post"
   style="max-width: 95%; display:block; margin: 1.5rem auto;"

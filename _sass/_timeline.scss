@@ -36,10 +36,31 @@
       padding-bottom: 20px;
       border-bottom: 1px dashed $dark;
 
+      .org {
+        margin-top: -2px;
+        margin-bottom: 4px;
+        font-size: 1rem;
+        font-weight: 600;
+
+        .location {
+          font-weight: 400;
+          color: #6c757d;
+        }
+      }
+
       .date {
         margin-top: -5px;
         margin-bottom: 15px;
         color: #6c757d;
+      }
+
+      .highlights {
+        margin-bottom: 0;
+        padding-left: 1.1rem;
+
+        li {
+          margin-bottom: 6px;
+        }
       }
     }
   }

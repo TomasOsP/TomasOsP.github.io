@@ -20,8 +20,22 @@ runs the matching `.sh` file, and the output comes back to the chat.
   style="max-width: 90%; display:block; margin: 1.5rem auto;"
 />
 
+## In production
+The deployment that runs today sits in front of the [WhatsApp automation
+platform]({{ '/projects/12-2026-02-06-whatsapp-automation' | relative_url }}): every Monday
+at 08:00 the bot pushes a `reporte_semana_YYYYMMDD.csv` with the last seven days of
+records, and an `/informe` command returns the current record count and the timestamp of
+the most recent entry — on demand, from the chat.
+
+<img
+  class="reveal reveal--zoom"
+  src="{{ '/assets/images/telegram-ops-bot-reports.png' | relative_url }}"
+  alt="Telegram chat showing weekly CSV reports delivered automatically and an on-demand record summary"
+  style="max-width: 55%; display:block; margin: 1.5rem auto; border-radius: 8px;"
+/>
+
 ## Problem & Solution
-Routine operations — restart a service, check a disk, kick off a backup — do not justify
+Routine operations — pull a report, check a service, kick off a backup — do not justify
 finding a laptop and opening an SSH session. Exposing a shell over HTTP, on the other
 hand, is how servers get owned.
 

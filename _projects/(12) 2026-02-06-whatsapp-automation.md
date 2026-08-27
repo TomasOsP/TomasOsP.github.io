@@ -15,6 +15,16 @@ service** that parses incoming messages into a database with a dashboard on top,
 
 <img
   class="reveal reveal--zoom"
+  src="{{ '/assets/images/whatsapp-automation-flow.jpg' | relative_url }}"
+  alt="Round trip: submitted info from WhatsApp, webhook to the server, parsed into the database, confirmation back to the sender"
+  style="max-width: 95%; display:block; margin: 1.5rem auto;"
+/>
+
+Every message makes a full round trip — submitted, parsed, stored, confirmed — so the person
+on the other end knows immediately whether their entry was accepted.
+
+<img
+  class="reveal"
   src="{{ '/assets/images/whatsapp-automation-architecture.png' | relative_url }}"
   alt="Ingestion pipeline and bulk-sending pipeline"
   style="max-width: 95%; display:block; margin: 1.5rem auto;"

@@ -1,0 +1,14 @@
+<div class="col-lg mt-4">
+
+  <h2 class="mb-3">{{ include.title }}</h2>
+
+  <ul class="language-list">
+    {% for language in include.source %}
+    <li>
+      <span class="name">{{ language.name }}</span>
+      <span class="level text-muted">{{ language.level }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>

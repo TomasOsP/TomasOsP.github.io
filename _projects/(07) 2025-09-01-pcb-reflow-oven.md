@@ -1,12 +1,12 @@
 ---
 name: "PCB Reflow Oven Controller"
 tools: [ESP32, C/C++, PlatformIO, WebSockets, SPIFFS]
-image: /assets/images/pcb-reflow-oven-architecture.png
+image: /assets/images/pcb-reflow-oven-interface.png
 description: "Turning a cheap oven into a WiFi-controlled reflow station for surface-mount soldering"
 ---
 
 # PCBOven — WiFi Reflow Controller
-by: <em>Tomás Ospina.</em>
+by: <em>Hugo Abondano, Tomás Ospina, Juan Rodríguez, Nicolás Ospitia.</em>
 
 ## Overview
 An ESP32-based controller that automates the heating and cooling cycles needed to reflow
@@ -17,6 +17,13 @@ telemetry over WebSockets.
 
 <img
   class="reveal reveal--zoom"
+  src="{{ '/assets/images/pcb-reflow-oven-flow.png' | relative_url }}"
+  alt="Signal chain: dashboard over WiFi to the ESP32, temperature sensor, heating resistance"
+  style="max-width: 80%; display:block; margin: 1.5rem auto;"
+/>
+
+<img
+  class="reveal"
   src="{{ '/assets/images/pcb-reflow-oven-architecture.png' | relative_url }}"
   alt="Architecture: thermocouple → MAX31856 → ESP32 → SSR/fan, with a WebSocket web UI"
   style="max-width: 95%; display:block; margin: 1.5rem auto;"
@@ -37,6 +44,18 @@ thermocouple curve come back live while the SSR and the fan do the work.
 | Cooling           | PWM fan (pin 27)                                         |
 | Interface         | Web UI from SPIFFS, WebSocket telemetry on `/ws`, HTTP `/toggle` |
 | Power             | Separate supply for heater and fan — never off the 3.3 V rail |
+
+## The interface
+The whole control surface is a single page served from the ESP32's own flash — set the
+target temperature and a maximum heating time, flip the toggle, and watch the thermocouple
+reading and the fan state come back live over the WebSocket.
+
+<img
+  class="reveal reveal--zoom"
+  src="{{ '/assets/images/pcb-reflow-oven-interface.png' | relative_url }}"
+  alt="Web interface showing target temperature, maximum heating time, activation toggle, fan state and live sensor value"
+  style="max-width: 90%; display:block; margin: 1.5rem auto; border-radius: 8px;"
+/>
 
 ## My Role & Key Contributions
 - Wrote the full firmware: SPI thermocouple driver, PWM control of the SSR and fan, and

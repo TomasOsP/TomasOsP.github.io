@@ -7,8 +7,19 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-I am a Bilingual Electrical Engineer driven by the intersection of embedded systems, hardware design, and intelligent automation. My experience ranges from architecting high-speed digital systems and multilayer PCBs to designing AI-assisted decision logic and scalable Python-based workflows that eliminate manual operational bottlenecks. Whether I am developing deterministic firmware for real-time motion monitoring or orchestrating complex data validation pipelines across cloud-ready Linux environments , I focus on building reliable, product-oriented solutions. With a background that includes scaling robotic fleet operations in Silicon Valley and developing self-hosted IoT platforms , I bring a unique "systems thinking" approach  to solving hardware-software challenges in the age of AI.
+Hi, I am **{{ site.author.name }}** :wave:,<br>
+an **Electrical Engineer** working at the intersection of circuit design, PCB validation
+and intelligent automation. My hands-on work covers circuit analysis, schematic
+interpretation and PCB design/validation with EDA tools — **KiCad, Eagle and Altium
+Designer** — and I have taken circuits from schematic to working hardware on my own
+projects, catching design errors and validating behaviour before deployment.
+
+That hardware base sits alongside firmware and systems work: real-time embedded
+development in C/C++ on ESP32 and STM32, and Python automation that turns manual
+operational bottlenecks into traceable, reproducible workflows. Having diagnosed hardware
+faults on an autonomous robot fleet in the United States and communicated findings
+directly to clients in English, I am comfortable working from technical documentation and
+explaining what I find to people who need to act on it.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
@@ -16,5 +27,13 @@ I am a Bilingual Electrical Engineer driven by the intersection of embedded syst
 </div>
 
 <div class="row">
-{% include about/timeline.html %}
+{% include about/timeline.html title="Professional Experience" source=site.data.experience %}
+</div>
+
+<div class="row">
+{% include about/timeline.html title="Education" source=site.data.education %}
+</div>
+
+<div class="row">
+{% include about/languages.html title="Languages" source=site.data.languages %}
 </div>
