@@ -1,0 +1,11 @@
+# Project areas used by the filter on the home page and the projects listing.
+# `slug` must match the values in each project's `areas:` front matter.
+- slug: hardware-embedded
+  name: Hardware & Embedded
+  icon: fas fa-microchip
+- slug: ai-ml
+  name: AI & ML
+  icon: fas fa-brain
+- slug: automation
+  name: Automation
+  icon: fas fa-robot

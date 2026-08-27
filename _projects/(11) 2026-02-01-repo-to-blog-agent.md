@@ -3,6 +3,7 @@ name: "Repo-to-Blog Generator"
 tools: [Python, GitHub API, GPT-4, Jinja2, Jekyll]
 image: /assets/images/repo-to-blog-agent-architecture.png
 description: "Reads a GitHub repository and writes the technical article about it, ready to publish"
+areas: [ai-ml, automation]
 ---
 
 # GitHub Repository → Blog Post Generator

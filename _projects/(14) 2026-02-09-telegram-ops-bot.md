@@ -3,6 +3,7 @@ name: "Telegram Ops Bot"
 tools: [Python, Flask, Bash, Telegram Bot API, Linux]
 image: /assets/images/telegram-ops-bot-cover.png
 description: "Running server maintenance scripts from a Telegram chat, without opening an SSH session"
+areas: [automation]
 ---
 
 # Telegram Ops Bot

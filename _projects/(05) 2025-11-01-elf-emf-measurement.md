@@ -3,6 +3,7 @@ name: "ELF Electromagnetic Field Meter"
 tools: [ESP32, C/C++, FreeRTOS, MLX90393, KiCad, INA114]
 image: /assets/images/emf-thesis-helmholtz-bench.jpg
 description: "Undergraduate thesis — a low-cost instrument that measures the electric and magnetic fields we live inside"
+areas: [hardware-embedded]
 ---
 
 # Measuring the Fields We Live In

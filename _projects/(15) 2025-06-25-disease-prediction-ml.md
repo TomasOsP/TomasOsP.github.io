@@ -3,6 +3,7 @@ name: "Disease Prediction from Symptoms"
 tools: [Python, scikit-learn, imbalanced-learn, pandas]
 image: /assets/images/disease-prediction-ml-architecture.png
 description: "An ensemble of three classifiers voting on a diagnosis from ten binary symptoms"
+areas: [ai-ml]
 ---
 
 # Disease Prediction Using Machine Learning

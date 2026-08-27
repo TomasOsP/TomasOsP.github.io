@@ -3,6 +3,7 @@ name: "WhatsApp Automation Platform"
 tools: [Python, Flask, Node.js, SQLite, whatsapp-web.js]
 image: /assets/images/whatsapp-automation-architecture.png
 description: "Message ingestion, an operations dashboard and bulk sending — built around one WhatsApp channel"
+areas: [automation]
 ---
 
 # WhatsApp Automation Platform

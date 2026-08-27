@@ -1,0 +1,23 @@
+{%- comment -%}
+  Area filter shared by the home page portfolio grid and the /projects listing.
+  `target` is the CSS selector of the grid whose cards should be filtered.
+{%- endcomment -%}
+<div class="project-filter" data-filter-target="{{ include.target }}">
+  <button type="button" class="project-filter__btn is-active" data-area="all" aria-pressed="true">
+    All <span class="count">{{ site.projects | size }}</span>
+  </button>
+
+  {%- for area in site.data.areas %}
+    {%- assign matches = site.projects | where_exp: "p", "p.areas contains area.slug" -%}
+    {%- if matches.size > 0 %}
+  <button type="button" class="project-filter__btn" data-area="{{ area.slug }}" aria-pressed="false">
+    {%- if area.icon %}<i class="{{ area.icon }}"></i> {% endif -%}
+    {{ area.name }} <span class="count">{{ matches.size }}</span>
+  </button>
+    {%- endif -%}
+  {%- endfor %}
+</div>
+
+<p class="project-filter__empty" hidden>No projects in this area yet.</p>
+
+<script src="{{ '/assets/js/project-filter.js' | relative_url }}" defer></script>

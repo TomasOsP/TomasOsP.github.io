@@ -3,6 +3,7 @@ name: "Guitar Audio Front-End Filter"
 tools: [Analog Design, KiCad, PCB]
 image: /assets/images/audio-filter-diagram.png   # TODO: add a real thumbnail (PCB photo or render)
 description: "A signal-conditioning filter that brings electric-guitar audio into any microcontroller's ADC range"
+areas: [hardware-embedded]
 model_viewer: true
 ---
 

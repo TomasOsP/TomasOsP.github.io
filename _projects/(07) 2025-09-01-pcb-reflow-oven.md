@@ -3,6 +3,7 @@ name: "PCB Reflow Oven Controller"
 tools: [ESP32, C/C++, PlatformIO, WebSockets, SPIFFS]
 image: /assets/images/pcb-reflow-oven-interface.png
 description: "Turning a cheap oven into a WiFi-controlled reflow station for surface-mount soldering"
+areas: [hardware-embedded]
 ---
 
 # PCBOven — WiFi Reflow Controller

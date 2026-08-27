@@ -3,6 +3,7 @@ name: "AI Lead Automation"
 tools: [python]
 image: /assets/images/hover_ai_lead.png
 description: Workflow of a simulated enviorionment designed to process, validate and classify incoming leads using deterministic business rules and LLM. 
+areas: [ai-ml, automation]
 ---
 
 # Building an AI-Powered Lead Automation System

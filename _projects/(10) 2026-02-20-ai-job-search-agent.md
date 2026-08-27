@@ -3,6 +3,7 @@ name: "AI Job Search Agent"
 tools: [Python, Flask, SQLite, LLM, PDF parsing]
 image: /assets/images/ai-job-search-agent-architecture.png
 description: "Parses your CV, pulls live postings and ranks them 0–100 with the reasons behind each score"
+areas: [ai-ml, automation]
 ---
 
 # AI Job Search Agent

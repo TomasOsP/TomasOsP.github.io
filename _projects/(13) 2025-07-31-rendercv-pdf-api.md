@@ -3,6 +3,7 @@ name: "RenderCV PDF API"
 tools: [Python, FastAPI, Typst, Docker, Caddy]
 image: /assets/images/rendercv-pdf-api-architecture.png
 description: "A self-hosted API that turns RenderCV YAML into a typeset PDF — no LaTeX toolchain required"
+areas: [automation]
 ---
 
 # RenderCV PDF API

@@ -3,6 +3,7 @@ name: "AI Engineering Services in Java"
 tools: [Java 21, Spring Boot, Anthropic SDK, Maven, RAG]
 image: /assets/images/ai-engineer-java-architecture.png
 description: "A four-module Maven workspace: an agent loop, tool calling, hybrid RAG with citation checks, and an eval harness"
+areas: [ai-ml]
 ---
 
 # AI Engineer Java — Three Services and a Harness

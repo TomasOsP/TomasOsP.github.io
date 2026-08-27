@@ -100,10 +100,12 @@
 <section class="portfolio-section">
   <h2 class="section-title wow animated fadeInUp">Featured Projects</h2>
   <p class="section-subtitle wow animated fadeInUp" data-wow-delay=".1s">Technology & AI Focus</p>
-  
+
+  {% include projects/filter.html target=".portfolio-grid" %}
+
   <div class="portfolio-grid">
     {% for project in site.projects %}
-    <div class="portfolio-card wow animated fadeInUp" data-wow-delay="{{ forloop.index | times: 0.15 }}s">
+    <div class="portfolio-card wow animated fadeInUp" data-wow-delay="{{ forloop.index | times: 0.15 }}s" data-areas="{{ project.areas | join: ' ' }}">
       <a href="{{ project.url | relative_url }}" class="portfolio-link">
         <div class="portfolio-image">
           {% if project.image %}
@@ -142,13 +144,14 @@
 <section class="experience-highlights">
   <h2 class="section-title wow animated fadeInUp">Experience</h2>
   <div class="experience-timeline">
-    {% for item in site.data.timeline limit:2 %}
+    {% for item in site.data.experience limit:2 %}
     <div class="experience-item wow animated fadeInUp" data-wow-delay="{{ forloop.index | times: 0.15 }}s">
       <div class="experience-marker"></div>
       <div class="experience-content">
-        <span class="experience-date">{{ item.from }} - {{ item.to }}</span>
+        <span class="experience-date">{{ item.from }}{% if item.to %} - {{ item.to }}{% endif %}</span>
         <h4 class="experience-title">{{ item.title }}</h4>
-        <p class="experience-desc">{{ item.description | truncate: 200 }}</p>
+        {% if item.organization %}<p class="experience-org">{{ item.organization }}</p>{% endif %}
+        <p class="experience-desc">{{ item.highlights | first | truncate: 200 }}</p>
       </div>
     </div>
     {% endfor %}

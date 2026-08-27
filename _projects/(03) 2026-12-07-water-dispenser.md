@@ -3,6 +3,7 @@ name: "Smart Water Dispenser"
 tools: [Python, PLC, Raspberry Pi, MODBUS, MQTT, Qt]
 image: /assets/images/maquina_aguateros.png
 description: "Turning a basic water dispenser into a connected, self-monitoring machine"
+areas: [hardware-embedded]
 model_viewer: true
 ---
 

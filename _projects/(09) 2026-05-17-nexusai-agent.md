@@ -3,6 +3,7 @@ name: "NexusAI — Political Intelligence Agent"
 tools: [Node.js, Express, SQLite, Claude API, Perplexity, JWT]
 image: /assets/images/nexusai-agent-architecture.png
 description: "An AI agent that tracks Colombian political media, surfaces narratives and flags disinformation"
+areas: [ai-ml]
 ---
 
 # NexusAI — Agente de Inteligencia Política

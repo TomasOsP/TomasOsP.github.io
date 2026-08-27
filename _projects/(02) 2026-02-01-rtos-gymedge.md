@@ -3,6 +3,7 @@ name: "RTOS Gymedge"
 tools: [python]
 image: /assets/images/fitness_IoT.jpg
 description: "Clasificador de movimientos"
+areas: [hardware-embedded, ai-ml]
 ---
 
 # RTOS-GymEdge: Real-Time Exercise Classification

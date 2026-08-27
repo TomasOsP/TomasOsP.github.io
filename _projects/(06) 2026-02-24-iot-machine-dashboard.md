@@ -3,6 +3,7 @@ name: "IoT Machine Fleet Dashboard"
 tools: [ESP32, MQTT, NestJS, React, PostgreSQL, Docker]
 image: /assets/images/iot-machine-dashboard-architecture.png
 description: "Real-time storage-level monitoring for a fleet of vending machines spread across multiple sites"
+areas: [hardware-embedded]
 ---
 
 # IoT Machine Fleet Dashboard
